@@ -8,6 +8,7 @@ OpenPose emerges as a solution, providing fast and accurate real-time multi-pers
 
 ## Architecture:
 
+![alt text](https://github.com/mithileshgau/Openpose-Analysis/blob/patch-1/Images/Architecture.png)
 
 ### Input Processing and Coordinate Extraction:
 Analyze input videos using OpenPose to identify 25 key body points on each person in every frame.
@@ -23,22 +24,32 @@ This approach ensures a complete dataset for accurate motion analysis and player
 
 ## Analysis:
 
+
+
 ### Total Distance Analysis:
+
+![alt text](https://github.com/mithileshgau/Openpose-Analysis/blob/patch-1/Images/Total%20Distance%20Analysis.png)
+
 Compute Euclidean distance between leg coordinates in adjacent frames to measure player movement.
 Sum distances across all frames to determine the total distance traveled by each player.
 Essential for understanding players' mobility patterns and aiding performance evaluation and strategic decision-making.
 
 ### Average Player Speed:
+
+![alt text](https://github.com/mithileshgau/Openpose-Analysis/blob/patch-1/Images/Average%20Player%20Speed.png)
 Calculate frame speed as the Euclidean distance between adjacent frames.
 Obtain total average speed by summing individual frame speeds and dividing by the total number of frames.
 Utilized for relative speed comparison between players.
 
 ### Heatmap:
+
+![alt text](https://github.com/mithileshgau/Openpose-Analysis/blob/patch-1/Images/Heatmap.png)
 Generate visual maps showing player movement on the badminton court using leg coordinates.
 Combine individual player maps to provide a comprehensive view.
-Intensity of colors indicates player movement in different areas, offering valuable insights for strategic decisions.
+The intensity of colors indicates player movement in different areas, offering valuable insights for strategic decisions.
 
 ### Quadrant Dominance:
+![alt text](https://github.com/mithileshgau/Openpose-Analysis/blob/patch-1/Images/Quadrant%20Dominance.png)
 Evaluate player performance in specific court sections using leg coordinates.
 Divide the court into customizable quadrants, creating a detailed map showcasing player dominance.
 Enables players and coaches to optimize court coverage and strategize effectively.
